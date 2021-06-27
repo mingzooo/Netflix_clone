@@ -33,7 +33,7 @@ li{
 }
 
 .navbar .sub-nav{
-  margin-left: 800px;
+  margin-left: 840px;
 }
 
 
@@ -67,6 +67,7 @@ li{
   color: white;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   border-radius: 3px;
 }
 
@@ -105,7 +106,7 @@ li{
 }
 
 .search {
-  width: 100%;
+  width: 90%;
   background-color: none;
   min-height: 80px;
   display: flex;
@@ -140,7 +141,7 @@ li{
   font-weight: normal;
 }
 
-.container1 {
+.container {
   width: 100%;
   min-height: 460px;
   background-color: black;
@@ -154,7 +155,7 @@ li{
   text-align: left;
 }
 
-.container1 img {
+.container img {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -165,7 +166,7 @@ li{
   height: 350px;
 }
 
-.container1 .image {
+.container .image {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -269,15 +270,65 @@ label {
   width: 100px;
   height: 50px;
   background-color: red;
+  font-size: 25px;
+  margin: 5px;
+}
+.qna .answerbox2{
+  display: none;
+  width: 100px;
+  height: 50px;
+  background-color: red;
+}
+.qna .answerbox3{
+  display: none;
+  width: 100px;
+  height: 50px;
+  background-color: red;
+}
+.qna .answerbox4{
+  display: none;
+  width: 100px;
+  height: 50px;
+  background-color: red;
+}
+.qna .answerbox5{
+  display: none;
+  width: 100px;
+  height: 50px;
+  background-color: red;
+}
+.qna .answerbox6{
+  display: none;
+  width: 100px;
+  height: 50px;
+  background-color: red;
 }
 
 #textbox1:checked ~ .answerbox1 {
   display: block;
 }
 
-#textbox1:checked ~ .quest i {
-  transform: rotate( 45deg );
+#textbox2:checked ~ .answerbox2 {
+  display: block;
 }
+
+#textbox3:checked ~ .answerbox3 {
+  display: block;
+}
+
+#textbox4:checked ~ .answerbox4 {
+  display: block;
+}
+
+#textbox5:checked ~ .answerbox5 {
+  display: block;
+}
+
+#textbox6:checked ~ .answerbox6 {
+  display: block;
+}
+
+
 
 .quest i {
   display: flex;
@@ -293,7 +344,7 @@ label {
 }
 
 .search1 {
-  width: 50%;
+  width: 45%;
   background-color: none;
   min-height: 80px;
   display: flex;
@@ -301,6 +352,7 @@ label {
   align-items: center;
   justify-content: center;
   text-align: left;
+  margin-top: 7px;
   margin-bottom: 30px;
 }
 
@@ -316,10 +368,9 @@ label {
   justify-content: center;
   background-color: #e50914;
   min-height: 70px;
-  width: 70%;
+  width: 30%;
   color: white;
-  font-size: 30px;
-  margin: 50px 0;
+  font-size: 27px;
   text-transform: uppercase;
 }
 
