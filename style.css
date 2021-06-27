@@ -210,12 +210,13 @@ li{
   text-align: center;
   color: white;
   text-align: center;
-  font-size: 55px;
+  font-size: 49px;
+  font-weight: 700;
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .qna{
@@ -249,7 +250,7 @@ li{
   justify-items: center;
   align-self: center;
   font-size: 25px;
-  word-spacing: 5px;
+  word-spacing: 2px;
   margin: 0 30px;
   width: 100%;
 }
@@ -263,17 +264,19 @@ label {
   cursor: pointer;
 }
 
-.quest .answerbox1{
-  flex-direction: column;
-  display:none;
+.qna .answerbox1{
+  display: none;
   width: 100px;
   height: 50px;
-  background: red;
-  transition: all 0.3s;
+  background-color: red;
 }
 
-#textbox:checked ~ .answerbox1 {
+#textbox1:checked ~ .answerbox1 {
   display: block;
+}
+
+#textbox1:checked ~ .quest i {
+  transform: rotate( 45deg );
 }
 
 .quest i {
@@ -357,9 +360,11 @@ label {
 
 }
 
-.footer .flex1 h5 {
-  font-size:15px;
+.flex1 h5 {
+  font-size: 16px;
   font-weight: 10;
+  margin-top: 40px;
+  margin-bottom: 23px;
   align-self:flex-start;
 }
 
@@ -420,7 +425,8 @@ label {
 	border: solid 1px white;
 }
 
-.footer-netflix{
-  margin-left: 200px;
+.netflix-footer{
+  margin-left: 180px;
+  font-size: 13px;
 }
 
