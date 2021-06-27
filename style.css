@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
 body{
   margin: 0;
   padding: 0;
@@ -97,8 +99,8 @@ li{
 }
 
 .area h3 {
-  margin-top: -30px;
-  font-size: 27px;
+  margin-top: 10px;
+  font-size: 25px;
   font-weight: normal;
 }
 
@@ -133,7 +135,8 @@ li{
 }
 
 .area h4 {
-  margin-top: 10px;
+  margin-top: 20px;
+  font-size: 19px;
   font-weight: normal;
 }
 
@@ -206,17 +209,27 @@ li{
 .question h1 {
   text-align: center;
   color: white;
-  margin-bottom: 50px;
   text-align: center;
   font-size: 55px;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.quest {
+.qna{
+  flex-direction: column;
   width: 51%;
+  min-height: 75px;
+  background-color: #303030;
+  color: white;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.quest {
+  width: 100%;
   min-height: 75px;
   background-color: #303030;
   color: white;
@@ -225,32 +238,55 @@ li{
   display: flex;
   text-align: left;
   flex-direction: row;
-  margin: 5px 0;
 }
 
 .quest .textbox {
   display: flex;
   text-align: left;
-
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
   justify-items: center;
   align-self: center;
   font-size: 25px;
-  margin: 0 30px;
   word-spacing: 5px;
-  text-align: left;
+  margin: 0 30px;
+  width: 100%;
+}
+
+.quest input{
+  position: fixed;
+  left: -9999px;
+}
+
+label {
+  cursor: pointer;
+}
+
+.quest .answerbox1{
+  flex-direction: column;
+  display:none;
+  width: 100px;
+  height: 50px;
+  background: red;
+  transition: all 0.3s;
+}
+
+#textbox:checked ~ .answerbox1 {
+  display: block;
 }
 
 .quest i {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  color: rgb(255, 255, 255);
   margin: 0 30px;
   font-size: 40px;
-  color: rgb(255, 255, 255);
 }
 
-.quest:focus {
-  background-color: red;
+.quest i:hover{
+  transform: rotate( 45deg );
 }
 
 .search1 {
@@ -262,7 +298,7 @@ li{
   align-items: center;
   justify-content: center;
   text-align: left;
-  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .box1 {
@@ -286,7 +322,13 @@ li{
 
 .question h4 {
   color: white;
-  padding-bottom: 40px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.quest i {
+  color: white;
+  margin: 0 30px;
 }
 
 .footer {
